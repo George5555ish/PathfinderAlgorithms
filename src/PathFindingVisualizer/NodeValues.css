@@ -1,0 +1,145 @@
+.overall-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pathfinder-img {
+  background: url("./pathfinding2.JPG");
+  background-repeat: no-repeat;
+  margin: 10px;
+  width: 450px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 900px;
+  justify-items: center;
+  /* outline: 1px solid */
+}
+
+.overview-title {
+  font-family: "Monotype Corsiva";
+  color: rgb(73, 73, 73);
+  font-weight: bold;
+  font-size: 42px;
+  justify-self: self-start;
+  padding: 2.2rem 0;
+  padding-bottom: 20px;
+  margin-left: 65px;
+}
+
+.overview-grid-box {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  width: 100%;
+
+  /* outline: 1px solid; */
+}
+
+.second-grid {
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 10px; */
+  height: 100px;
+  display: grid;
+  grid-row-gap: 25px;
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+  padding: 30px;
+  border-radius: 5px;
+  background-color: hsl(227, 47%, 96%);
+  transition: 0.45s ease;
+}
+
+.second-grid:hover {
+  background-color: hsl(227, 47%, 91%);
+}
+
+/* 
+.fresh {
+    
+    font-size: 14px;
+    margin-left: 5px;
+} */
+
+.card-views {
+  font-size: 25px;
+  font-family: "Monotype Corsiva";
+  color: rgb(167, 165, 165);
+  font-weight: bold;
+}
+
+.amt-div {
+  grid-area: bottom left;
+  align-self: end;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Monotype Corsiva";
+}
+
+.legend {
+  margin-left: 60px;
+  /* border: 1px solid; */
+  width: 800px;
+}
+
+.legend-grid {
+  width: 100%;
+}
+
+.legendary-grid {
+  width: 600px;
+  margin-left: 10px;
+}
+
+.legend-left {
+  display: flex;
+  margin-left: 50px;
+}
+
+.triangle-right {
+  background-image: url(./Node/triangletwo-right.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  margin: 4px 40px;
+}
+
+.legend-circle {
+  background-image: url(./Node/circle.svg);
+  width: 25px;
+  height: 25px;
+  margin: 5px 28px;
+}
+
+.legend-wall {
+  background-image: url(./Node/wall.JPG);
+}
+
+.legend-visited {
+  background-image: url(./Node/visitedNode.JPG);
+}
+
+@media (max-width: 900px) {
+  .legend {
+    display: none;
+  }
+
+  .overall-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* .legend-grid {
+    width: 400px;
+    margin-right: 600px;
+  } */
+  .overview-grid {
+    width: 800px;
+    margin-left: 10vw;
+  }
+}
